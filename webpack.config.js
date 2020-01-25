@@ -129,8 +129,8 @@ const config = function (env, args) {
             }),
             new CopyWebpackPlugin([
                 {
-                    from: path.resolve(__dirname, 'src', 'images', 'content'),
-                    to: path.resolve(__dirname, 'dist', 'images', 'content'),
+                    from: path.resolve(__dirname, 'src', 'images'),
+                    to: path.resolve(__dirname, 'dist', 'images'),
                     toType: 'dir',
                 },
             ]),
