@@ -1,0 +1,81 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color: #4A4A4A;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  @media (min-width: 767px) {
+    font-size: 25px;
+  }
+}
+
+.cdcl-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+.cdcl-header {
+  padding: 40px 0 24px;
+  @media (min-width: 767px) {
+    padding: 50px 0 24px;
+  }
+
+  p {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    max-width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.cdcl-icon--text {
+  margin-left: 10px;
+  @media (min-width: 767px) {
+    margin-left: 20px;
+  }
+}
+
+.cdcl-list {
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+
+  li {
+    padding: 24px 0;
+    &.expanded {
+      .cdcl-list--expandable {
+        display: block;
+      }
+    }
+  }
+
+  @media (min-width: 767px) {
+    display: flex;
+    margin-bottom: 21px;
+    li {
+      padding: 16px;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+.cdcl-list--expandable {
+  padding: 20px 20px 0 75px;
+  display: none;
+  color: #9e9e9e;
+  @media (min-width: 767px) {
+    padding: 40px 40px 0 100px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
